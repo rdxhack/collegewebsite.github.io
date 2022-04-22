@@ -1,0 +1,941 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            COLLEGE template
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <style>
+            body{
+                margin:0%;
+                background-color: rgb(191, 168, 218);
+                overflow: scroll;
+            }
+        .container-header{
+            
+            background-color: rgb(240, 247, 244);
+            height: 120px;
+            width: 100;
+        }
+        .logo1 {
+            float:right;
+            margin-top:5px;
+            margin-right: 90px;
+
+        }.name{
+            margin-left: 30px;
+        }
+        img{
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        .header{
+            background-color: rgba(8, 8, 8, 0.877);
+            height: 50px;
+            width: 100%;
+            margin: 0px;
+            position: sticky;
+        }
+      
+        .list{
+            margin: 0px;
+            list-style: none;
+            display: flex;
+        }
+        .list1{
+            margin: 13PX;
+            text-decoration: none;
+            display: flex;
+            font-weight: 50;
+            font-size: 15px;
+        }
+            
+        .list1 :hover{
+            background-color: rgb(147, 114, 224);
+            border-radius: 10%;
+
+            }
+        
+        a{
+            color: rgb(238, 232, 232);
+            text-decoration: none;
+            text-decoration-style: none;
+        }
+        .banner{
+            background-color: blue;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow: hidden;    
+
+        }
+        .slider{
+            height:100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+        #slidenig{
+            margin: 0px;
+            height:100%;
+            width: 100%;
+            animation: zoom 3s linear infinite;
+
+
+        }
+        @keyframes zoom {
+            0%{
+                transform: scale(1.3);
+            }
+            15%{
+                transform: scale(1);
+            }
+           85%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.3);
+            }
+
+
+            
+        }
+        .overlay{
+            height: 100vh;
+            width: 100%;
+            /* background:linear-gradient(rgba(29, 27, 27, 0.7),rgba(19, 17, 17, 0.7)); */
+            position: absolute;
+            top: 0;
+            
+        }
+        .content{
+            width: 60%;
+            margin:20px;
+            text-align: left;
+            color: rgb(208, 230, 14);
+        }
+        .content h1{
+            font-size: 50px;
+            color: rgb(235, 252, 2);
+            margin-left: 15px;
+           
+        }
+       
+        .fgiet{
+           
+           width: 30%;
+           height: 100vh;
+           float: right;
+           background-color: rgb(164, 230, 197);
+           text-align: center;
+           margin-right: 0%;
+           
+       }
+       .fgiet-content{
+           color: black;
+       }
+       .fgiet-img{
+           width: 90%;
+           height: 150px;
+           margin-left: 0%;
+           /* margin-right: 10%; */
+         
+       }
+       
+        .btnkush{
+            
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(3, 3, 3);
+            font-size: small;
+            font-weight: 300;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           margin-bottom: 20px;
+            border-radius: 10%;
+            margin-left: 10%;
+            margin-top: 0%;
+        }
+
+       
+
+        .h{
+            width: 55%;
+        }
+        .hs{
+            width: 75%;
+        }
+        .content h3{
+            text-align:left;
+            width: 80%;
+            line-height: 25px;
+            font-weight: 500;
+            margin-left:10px;
+            color: rgb(255, 0, 0);
+        }
+        /*   feature */
+        .feature{
+            width:100%;
+            height:60vh;
+            background-color: rgb(222, 248, 108);
+            margin-top:-20px;
+            background-image: url("back.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
+       
+        .center{
+            text-align: center;
+            background-color: rgb(7, 7, 7);
+           
+
+        }
+        .feature-lav1{
+            text-align: center;
+            border: 2px solid rgb(100, 100, 67); 
+            background-color: rgb(17, 17, 17); 
+
+        }
+        
+        .feature-lav2{
+            background-color: whitesmoke;
+            background-image: url("backlav.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 30%;
+            height: 80%;
+            margin-left: 2%;
+            margin-top: -1%;
+            float: left;
+            border-radius: 10px;
+            border: 2px solid brown;
+
+        }
+        .feature-lav2:hover{
+            background-color: rgb(198, 235, 222);
+        }
+        .feature-lav3{
+            background-color:whitesmoke;
+            background-image: url("backlav.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 30%;
+            height: 80%;
+            margin-left: 3%;
+            margin-top: -1%;
+            float: left;
+            border-radius: 10px;
+            border: 2px solid brown;
+
+        }
+        .feature-lav3:hover{
+            background-color: rgb(181, 175, 230);
+        }
+        .feature-lav4{
+            background-color: whitesmoke;
+            background-image: url("backlav.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 30%;
+            height: 80%;
+            margin-right: 2%;
+            margin-top: -1%;
+            float: right;
+            border-radius: 10px;
+            border: 2px solid brown;
+
+        }
+        .feature-lav4:hover{
+            background-color: rgb(238, 173, 209);
+        }
+        .feature-content{
+            text-align: center;
+            border: 2px solid rgb(100, 100, 67); 
+           
+            font-weight: 200;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: larger;
+            color: black;
+
+        }
+        .btnlav{
+            align-items: center;
+            color: rgb(15, 15, 15);
+            cursor: pointer;
+            height: 30px;
+            width: 100px;
+            background-color:rgb(179, 108, 108);
+            font-size: small;
+            font-weight: 300;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           /* margin-bottom: 10px; */
+            border-radius: 30% 0% 30% 0%;
+            float: right;
+            margin-top: -3%;
+            margin-right: 5%;
+           
+         
+
+        }
+        .btnlav:hover{
+
+            background-color:rgb(223, 134, 218);
+           
+        }
+        .feature-img{
+            height: 55%;
+            width: 99%;
+            margin-left: 0%;
+            border-radius: 5% 5% 0% 0%;
+            margin-top: 0%;
+
+        }
+        /* recent event */
+        .center{
+            text-align: center;
+        }
+        .feature-lavkush{
+            text-align:center;
+            /* margin-left: 50%;
+            margin-right: 50%; */
+            border: 2px solid rgb(100, 100, 67); 
+            background-color: aliceblue; 
+
+        }
+        .feature-image{
+            height: 55%;
+            width: 99%;
+            margin-left: 0%;
+            border-radius: 5% 5% 0% 0%;
+            margin-top: 0%;
+
+        }
+        .feature-event{
+            width:100%;
+
+            height:70vh;
+            margin-top: -5%;
+           
+            background-color: whitesmoke;
+            background-image: url("backlav2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 1px solid yellow;
+            margin-top:0px;
+        }
+
+        /* box-container */
+        .box-container{
+            height: 35vh;
+            width: 100%;
+            background-color: rgb(195, 157, 229);
+            background-image: url("opp.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           
+        }
+        .box{
+            margin-left: 1%;
+            margin-top: 1%;
+            border-radius: 10px;
+            width: 18%;
+            height: 30vh;
+            background-color: rgb(231, 138, 8);
+            display: inline-flex;
+            border: 2px solid brown;
+
+        }
+        .box2{
+            width: 18%;
+            height: 30vh;
+            background-color: rgb(232, 209, 245);
+            display: inline-flex;
+            margin-left: 1%;
+            margin-top: 1%;
+            border-radius: 10px;
+            border: 2px solid brown;
+            
+        }
+        .center2{
+            text-align: center;
+        }
+        .center3{
+            text-align: center;
+        }
+         .abhi{
+            width: 40%;
+            height: 45%;
+            border-radius: 50%;
+            margin-top: -5%;
+            margin-left: 30%;
+        }
+        .our-service{
+           display: flex;
+        }
+        .student-box{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(137, 216, 216);
+           margin-top: 40%;
+           margin-left: -70%;
+           text-align: center;
+
+        }
+
+
+        /*   contact container */
+        .contact-container{
+          
+            border: 1px solid brown;
+           margin-top: 5px;
+            border-top: 1px solid rgb(246, 250, 7);
+            background-color: aquamarine;
+            height: 65vh;
+            width: 100%;
+            background-image: url("contact.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; 
+        }
+        .kush{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: red;
+        }
+        .contact{
+            float: right; 
+            width: 25%;
+            height: 65vh;
+            background-color: rgb(243, 239, 189);
+            display: block;
+           margin-right: 30px; 
+           margin-top: 0px;
+           margin-bottom: 30px;
+           border-radius: 10px;
+            border: 2px solid brown;
+        }
+        .lav{
+          margin: 2px;
+          width: 98%;
+      
+        }
+        
+        input[type=text],select,textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin: 3px;
+            margin-right: 10px;
+            
+        }
+       
+        .btn1{
+            display:inline-flex;
+        }
+        .btn{
+            
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(3, 3, 3);
+            font-size: small;
+            font-weight: 300;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           margin-bottom: 20px;
+            border-radius: 10%;
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+        .btn:hover{
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+        .form-left{
+            float: left;
+            color: white;
+            height: 100px;
+            width: 65%; 
+        }
+        .content-kush{
+            font-size: small;
+            margin-left: 2%;
+            margin-top: 10%;
+            border: 2px solid brown;
+            border-radius:30px 0px 30px 0px;
+           
+        }
+        .hind{
+            margin-left: 4px;
+        }
+        .student-2{
+            list-style: none;
+            display: flex;
+            margin-top: 0px;
+            float: left;
+            margin-left: 15px;
+        }
+       
+         .student-plce1{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            color:whitesmoke;
+        } 
+        .student-place{
+            width: 50%;
+            height: 100px;
+            margin-top: 10%;
+            float: left;
+            margin-left: 30px;
+        }
+        .ll{
+            margin: 0;
+            width: 100px;
+            height: 100px; 
+            margin-top: 5px;
+
+            margin-left: 25%;
+        }
+        .kk{
+            margin-top: 10px;
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 1000;
+            color: yellow;
+        }
+        /* footer */
+        .footer{
+            height: 60vh;
+            width: 100%;
+            /* background-color:  #f7f9fc; */
+            background-image: url("footer.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+           background-size: cover;
+            display:inline-flex;
+        }
+        .foot1{
+            height: 60vh;
+            width: 30%;
+            background-color: rgb(241, 224, 224);
+            float: left;
+            margin-left: 3%;
+            border-radius: 10px;
+            border: 2px solid brown;
+        }
+        .foot2{
+            height: 60vh;
+            width: 30%;
+            background-color: rgb(202, 202, 235);
+            margin-left: 5%;
+            border-radius: 10px;
+            border: 2px solid brown;
+        }
+        .foot3{
+            height: 60vh;
+            width: 30%;
+            background-color: rgb(245, 229, 243);
+            margin-left: 5%;
+            margin-right: 3%;
+            border-radius: 10px;
+            border: 2px solid brown;
+        }
+        .footul{
+            display: block;
+            list-style: none;
+         
+            margin-left: 0%;
+            margin-top: 10%;
+          
+
+        }
+        .content-kush1{
+            font-size: small;
+            margin-left: 20%;
+            margin-top: 0%;
+            /* border: 2px solid brown; */
+            border-radius:0PX 30px 0px 30px;
+            text-align: center;
+            width: 100%;
+           
+        }
+        .love{
+            margin-top:5%;
+            text-align: left;
+            background-color: rgb(236, 230, 230);
+            height: 30px;
+            color: rgb(219, 20, 20);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+            font-size: larger;
+        }
+        h1{
+            color: whitesmoke;
+            align-items: center;
+        }
+        .map1{
+            width: 100%;
+            height: 50vh;
+             position: absolute;
+            background-image: url("contact2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+           background-size: cover;
+         
+            border: 2px solid rgb(244, 248, 10);
+        }
+        .map{
+            width: 30%;
+            height: 45vh;
+            margin-left: 20px;
+            margin-top: 10px;
+            /* margin-bottom: 5px; */
+            float: left;
+            border: 2px solid brown;
+
+        }
+        
+        .map-content1{
+            margin-top: 10px;
+            height: 45vh;
+            width: 50%;
+            background-color: bisque;
+            float: right;
+            margin-right: 10%;
+            /* background-image: url("contact.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+           background-size: cover; */
+           background:linear-gradient(rgba(100, 82, 82, 0.7),rgba(10, 8, 8, 0.7));
+        }
+        .map-content{
+            text-align: center;
+            color: blue;
+        }
+        .map-content2{
+            text-align: center;
+            color: rgb(16, 245, 84);
+        }
+        .map-content3{
+            text-align: center;
+            color: rgb(245, 10, 10);
+        }
+        /* opportunity */
+        .oppo{
+            margin-left: 1%;
+            margin-top: 1%;
+            border-radius: 10px;
+            width: 100%;
+            height: 30vh;
+            /* background-color: rgb(240, 142, 6); */
+            display: inline-flex;
+            border: 2px solid brown;
+
+
+        }
+        .result{
+            text-decoration: none;
+            color: rgb(253, 8, 8);
+        }
+        .result:hover{
+            color: black;
+        }
+        
+       
+      
+       
+        </style>
+        <link rel="stylesheet" media="screen and(max-width: 1170px)" href="/index/stylephone.css" >
+       
+    </head>
+    <body onload="slider()">
+        <div class="container-header">
+            <div class="logo1">
+                <a href="http://fgiet.ac.in/" target="blank"><img src="logo2.gif"></a>
+
+            </div>
+            <div class="name">
+                <a href="http://fgiet.ac.in/" target="blank"><img src="fgiet.png"></a>
+
+            </div>  
+           
+        </div>
+        <!--    navbar -->
+        <div class="header">
+            <div class="header-section">
+                <ul class="list">
+                    <li class="list1"><a href="#more">ABOUT</a></li>
+                    <li class="list1"><a href="#">GOVERNANCE</li>
+                    <li class="list1"><a href="#ourcources">OUR COURSE</a></li>
+                    <li class="list1"><a href="#partner">TRANING AND PLACEMENT</a></li>
+                    <li class="list1"><a href="#">FEE STRUCTURE</a></li>
+                    <li class="list1"><a href="#">STUDENT</a></li>
+                    <li class="list1"><a href="#">GALLERY</a></li>
+                    <li class="list1"><a href="#contact-container">CONTACT</a></li>
+                    <li class="list1"><a href="#">EXAMINATIONS</a></li>
+                    <li class="list1"><a href="#more">FACILITIES</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="slider">
+            <img src="download.jpg" id="slidenig">
+        </div>
+        <!--      fgiet right -->
+        
+            <div class="overlay">
+                 <div class="fgiet">
+                    <h1 class="center">Welcome to Feroze Gandhi Institute of Engineering and Technology</h1><br>
+                    <img src="download.jpg" alt="FGIET NETWORK ERROR" class="fgiet-img">
+                    <h3 class="fgiet-content">Feroze Gandhi Institute of Engineering & Technology is a premier institute, established with a vision to develop world class technical professionals. FGIET having a spectacular campus of 22.5 acre with several conspicuous features. It Offers an amiable, verdant and eco-friendly atmosphere to the students and fosters them to be more meditative, veracious and focused.<br>
+
+                        The Institute was established by a dynamic organisation, inaugurated with the blessing of Smt...</h3>
+                        <button class="btnkush">READ MORE</button>
+                </div> 
+               
+               
+               
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <!-- FEATURE -->
+        <div class="feature">
+            <h1 class="feature-lav1" id="ourcources">Our Featured Courses</h1> 
+            <div class="feature-lav2">
+                <img class="feature-img" src="btech.jpg">
+                <h4  class="feature-content">B.TECH</h4>
+                <h5 class="center2">CSE, CS, CS&IT (AI&ML), CS(DS),CSE(HINDI) </h5>
+               
+                <button class="btnlav">READ MORE</button>
+            </div>
+            <div class="feature-lav3">
+                <img class="feature-img" src="rgbh1.jpg">
+                <h4 class="feature-content">MASTER OF COMPUTER APPLICATION</h4>
+                <H5 class="center2">MCA(Website: www.fgiet.com)</H5>
+             
+                <button class="btnlav">READ MORE</button>
+            </div>
+            <div class="feature-lav4">
+                <img class="feature-img" src="computer.jpg">
+                <h4  class="feature-content">DIPLOMA</h4>
+                <h5 class="center2">CSE, ME, CIVIL, EC</h5>
+               
+                <button class="btnlav">READ MORE</button>
+         
+            </div>
+        </div>
+      
+        <!--    CONTACT -->
+        <div class="contact-container" id="contact-container">
+        <div class="contact">
+            <h2 class="kush"><p>Contact Us</p></h2>
+            <form action="none">
+                <div class="lav"> <input type="text" placeholder="Enter your Name"></div>
+               <div  class="lav"> <input type="text" placeholder="Enter your Email"></div>
+               <div  class="lav"> <input type="text" placeholder="Enter your phone No."></div>
+              <select class="lav">
+                    <option value="Course" >Select a Course</option>
+                    <option value="b.TECH">B.TECH</option>
+                    <option value="M.TECH">MCA</option>
+                    <option value="lavkush">DIPLOMA</option>
+              </select>
+                <div  class="lav"><input type="text" placeholder="Enter your Message" ></div>
+                <div class="btn1">
+                <button type="reset" class="btn">Reset</button>
+              <button class="btn">Summit</button>
+            </div>
+               
+            </form>
+        </div>
+        <div class="form-left">
+            <div class="content-kush">
+                <h2 class="hind">The college is accredited by NAAC. The college has been consistently maintaining excellent academic results and placements. The college has the distinction of being the first and only college in UP to receive the Acedemic Excellence Award for the Best Engineering College in UPTU from H.E. the Governor of UP for two successive years.</h2>
+            </div>
+        </div>
+        <div class="student-place">
+            <ul class="student-2">
+               <div class="ll"> <li class="student-plce1"><span class="kk">1100+</span>
+                    STUDENTS PLACED
+                    (2020-21)</li> </div>
+                    <div class="ll"><li class="student-plce1"><span class="kk"> 188+</span>
+                    STUDENTS IN UNIV.
+                    MERIT LIST</li> </div>
+                    <div class="ll"><li class="student-plce1"><span class="kk">18k</span>
+                    STUDENTS
+                     </li> </div>
+            </ul>
+        </div>
+         </div>
+    </div>
+    <!-- notices -->
+    <h1 class="feature-lav1"><h1 class="center">NOTICES</h1> 
+    <div class="box-container">
+        <div class="box">
+            <img src="no.jpg"  alt="lavkush" class="oppo">
+        </div>
+        <div class="box">
+            <img src="no1.jpg" alt="error" class="oppo">
+        </div>
+        <div class="box">
+            <img src="no5.jpg"  alt="lavkush" class="oppo">
+        </div>
+        <div class="box">
+            <img src="no.jpg" alt="error" class="oppo">
+        </div>
+        <div class="box">
+            <img src="kusklav.jpg" alt="error" class="oppo">
+        </div>
+    </div>
+      <!--   recent event -->
+      <div class="feature-event">
+        <h1 class="feature-lav1"><h1 class="center">Recent Events </h1> 
+        <div class="feature-lav2">
+            <img class="feature-image"  alt="lavkush" src="event1.jpg">
+        </div>
+        <div class="feature-lav3">
+            <img class="feature-image"  alt="lavkush" src="rgbh1.jpg">
+        </div>
+        <div class="feature-lav4">
+            <img class="feature-image"  alt="lavkush" src="cric.jpg">
+     
+        </div>
+    </div>
+    
+
+    <!--  small box -->
+    <div class="header" id="partner"><h1 class="center2">OPPORTUNITY</h1></div>
+    <div class="box-container">
+        <div class="box">
+            <img src="wipro.jpg" alt="error" class="oppo">
+        </div>
+        <div class="box">
+            <img src="cog.png"  alt="lavkush"class="oppo">
+        </div>
+        <div class="box">
+            <img src="infosys.jpg" alt="lavkush" class="oppo">
+        </div>
+        <div class="box">
+            <img src="tcs.jpg"  alt="lavkush" class="oppo">
+        </div>
+        <div class="box">
+            <img src="gene.png"  alt="lavkush" class="oppo">
+        </div>
+    </div>
+    <div class="header" id="partner"><h1 class="center2">STUDENTS</h1></div>
+    <div class="box-container">
+        <div class="our-service">
+        <div class="box2">
+            <img class="abhi" src="abhi.jpg" alt="lavkush" >
+            <h2 class="student-box">Love, not hate.<br>“Never stop looking up”</h2>
+        </div>
+        <div class="box2">
+            <img class="abhi" src="lavkush.jpg" alt="lavkush" >
+            <h2 class="student-box">“Never stop looking up” Vow to stop worrying and loving.</h2>
+        </div>
+        <div class="box2">
+            <img class="abhi" src="mayank.jpg" alt="lavkush" >
+            <h2 class="student-box"> Vow to stop worrying and start loving.</h2>
+        </div>
+        <div class="box2">
+            <img class="abhi" src="gg.jpg" alt="lavkush" >
+            <h2 class="student-box"> “We are all broken, that’s how the light gets in.”</h2>
+        </div>
+        <div class="box2">
+            <img class="abhi" src="lavkush.jpg" alt="lavkush" >
+            <h2 class="student-box">Believe it’s possible to be at peace.</h2>
+        </div>
+        </div>
+    </div>
+    <!-- footer -->
+<div class="footer" id="more">
+    <div class="foot1">
+        <h1 class="center">QUICK LINKS</h1>
+        <ul class="footul">
+            <a href="#"><li class="love">NAAC</li></a>
+            <li class="love">AKGEC MCA</li>
+            <li class="love">Mandatory Disclosure</li>
+            <li class="love">Online Reporting of Ragging Cases</li>
+            <li class="love">Grievance Committee</li>
+        </ul>
+    </div>
+    <div class="foot2">
+        <h1 class="center">ABOUT FGIET</h1>
+        <div class="form-left">
+            <div class="content-kush1">
+                <h2 class="hind">The college is accredited by NAAC. The college has been consistently maintaining excellent academic results and placements. The college has the distinction of being the first and only college in UP to receive the Acedemic Excellence Award for the Best Engineering College in UPTU </h2>
+            </div>
+        </div>
+        
+    </div>
+    <div class="foot3">
+        <h1 class="center">EXTRA ACTIVITIES</h1>
+        <ul class="footul">
+            <li class="love"><a class="result" href="https://erp.aktu.ac.in/webpages/oneview/oneview.aspx" target="blank"> RESULT</a></li>
+            <li class="love">GYM</li>
+            <li class="love">SPORTS</li>
+            <li class="love">LIBARARY</li>
+            <li class="love">YANTRAGENE</li>
+
+        </ul>
+    </div>
+   </div>
+   <div class="map1">
+   <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.4599960197615!2d81.23722741455165!3d26.24673019476098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ba3c239a79f53%3A0x2eb6d49e88aa224a!2sFeroze%20Gandhi%20Institute%20Of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1650556351996!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   <div class="map-content1">
+       <h2 class="map-content">FEROZE GANDHI INSTITUTE OF ENGINEERING & TECHNOLOGY</h2>
+       <h4 class="map-content2">Lucknow Road, Near Ratapur Chauraha, RaeBareli (U.P.)</h4>
+       <h3 class="map-content3"><span id="map-con">CONTACT NO.</span><br>
+        0535-2211269, 0535-2211430, +919235744110, +919450063272</h3>
+   </div>
+ 
+   </div>
+   
+ 
+      <!-- script -->
+        <!-- <script>
+            var slidenig =document.getElementById("slidenig");
+            var image = new Array(
+               "rgbh.jpg" ,
+               "rgbh1.jpg",
+               "rgbh.jpg",
+               "student.jpg"
+              
+               
+            );
+            var len =image.lenght;
+            var i= 0;
+            function slider(){
+              if(i>len-1)  {
+                  i=0;
+              }
+              slidenig.src =image[i];
+              i++;
+            
+              
+              setTimeout('slider()',2000);
+            }
+         
+      </script> -->
+
+    </body>
+</html>
